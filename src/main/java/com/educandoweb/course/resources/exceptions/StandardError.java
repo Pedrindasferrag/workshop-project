@@ -12,7 +12,7 @@ public class StandardError implements Serializable{
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH-mm-ss'Z'", timezone = "GMT")
 	private Instant timestamp;
 	private Integer status;
-	private String erro;
+	private String error;
 	private String message;
 	private String path;
 	
@@ -24,7 +24,7 @@ public class StandardError implements Serializable{
 		super();
 		this.timestamp = timestamp;
 		this.status = status;
-		this.erro = erro;
+		this.error = erro;
 		this.message = message;
 		this.path = path;
 	}
@@ -46,11 +46,11 @@ public class StandardError implements Serializable{
 	}
 
 	public String getErro() {
-		return erro;
+		return error;
 	}
 
 	public void setErro(String erro) {
-		this.erro = erro;
+		this.error = erro;
 	}
 
 	public String getMessage() {
